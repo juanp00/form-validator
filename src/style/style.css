@@ -6,10 +6,14 @@
 }
 
 .container-form {
-    border: 1px solid #7979793d;
-    padding: 3em;
-    border-radius: 10px;
     max-width: 40em;
+}
+
+.container-form-element{
+    border: 1px solid #7979793d;
+    padding: 2em;
+    padding-bottom: 0;
+    border-radius: 10px;
 }
 
 .container-form input[type="text"], input[type="email"]{
@@ -21,7 +25,7 @@
     box-shadow: none;
 }
 
-.div-input-name, .div-input-cpf, .div-input-email{
+.div-input-name, .div-input-cpf, .div-input-email,.div-input-rg{
     width: 100%;
 }
 

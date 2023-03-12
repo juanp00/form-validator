@@ -11,6 +11,7 @@ function validateEmail() {
         divInputEmail.classList.remove('input_invalid')
         divInputEmail.classList.add('input_valid')
     } else {
+        divInputEmail.classList.remove('input_valid')
         divInputEmail.classList.add('input_invalid')
     }
     });

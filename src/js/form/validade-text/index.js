@@ -7,6 +7,7 @@ function validateText() {
         meuInput.addEventListener('keydown', (event) => {
         const isCaractere = /[a-zA-ZÀ-ú ]/.test(event.key);
         if (!isCaractere) {
+            divInputName.classList.remove('input_valid')
             divInputName.classList.add('input_invalid')
             event.preventDefault();
         }else{

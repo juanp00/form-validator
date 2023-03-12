@@ -23,6 +23,7 @@ function validateRG() {
         divInputRG.classList.add('input_valid')
         
       }else{
+        divInputRG.classList.remove('input_valid')
         divInputRG.classList.add('input_invalid')
         console.log(rgLength)
       }
