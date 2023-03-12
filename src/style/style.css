@@ -5,14 +5,17 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 110vh;
+}
+
 .container-form {
     max-width: 40em;
 }
 
 .container-form-element{
     border: 1px solid #7979793d;
-    padding: 2em;
-    padding-bottom: 0;
+    padding: 4em 2em 0 2em;
     border-radius: 10px;
 }
 
@@ -41,7 +44,9 @@
     align-items: center;
     gap: 10px;
 }
-
+.alert{
+    height: 0;
+}
 .input_valid{
     border: 1px solid rgba(1, 92, 1, 0.993) !important;
 }
