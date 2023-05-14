@@ -3,20 +3,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 
 body{
     height: 110vh;
+    background: #03001e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+::selection {
+    background-color: #242424;
 }
 
 .container-form {
     max-width: 40em;
 }
-
+input {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+select {
+    background-color: transparent !important;
+}
+select:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+option {
+    color: #03001e;
+}
 .container-form-element{
-    border: 1px solid #7979793d;
+    border: 1px solid #ffffff3d;
     padding: 4em 2em 0 2em;
     border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .container-form input[type="text"], input[type="email"]{
@@ -36,7 +59,7 @@ body{
 .form-container-inputs-email,
 .form-container-inputs-cpf,
 .form-container-inputs-rg{
-    border: 1px solid #7979793d;
+    border: 1px solid #ffffff63;
     border-radius: 5px;
     padding: 8px 16px;
     display: flex;
